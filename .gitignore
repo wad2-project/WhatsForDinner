@@ -1,0 +1,9 @@
+*.pyc
+db.sqlite3
+__pycache__
+*.pyo
+/WhatsForDinner/migrations/
+WhatsForDinner/migrations/
+.WhatsForDinner/migrations/
+WhatsForDinner/migrations/0001_initial.py
+*~
