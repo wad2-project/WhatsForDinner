@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load staticfiles %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +10,11 @@
 <body>
     <div>
         <strong> What's for Dinner? </strong> <br />
+        <img src="{% static 'images/Whats-for-Dinner.jpg' %}" alt="Logo" />
     </div>
     <div>
-        <a href="/whatsfordinner/about/">About</a><br />
+        <a href="/whatsfordinner/about/">About</a><br /> //Test static image
+        <img src="{{MEDIA_URL}}3030.gif" alt="restaurant logo" /> //Test media image
     </div>
 </body>
 </html>
