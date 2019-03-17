@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whats_for_dinner'
+    'whats_for_dinner', ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

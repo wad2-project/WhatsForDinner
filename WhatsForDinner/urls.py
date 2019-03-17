@@ -21,8 +21,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^whatsfordinner/', include('whats_for_dinner.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^whats_for_dinner/', include('whats_for_dinner.urls')),
