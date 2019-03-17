@@ -3,6 +3,6 @@ from whats_for_dinner import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^$', views.about, name='about'),
-    url(r'^$', views.result, name='result'),
+    url(r'^about/$', views.about, name='about'),
+    url(r'^result/$', views.result, name='result'),
 ]
