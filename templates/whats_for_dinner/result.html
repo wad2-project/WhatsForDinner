@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's for Dinner</title>
+</head>
+<body>
+    <div>
+        <strong> Your Dinner </strong> <br />
+        {% if food %}
+            {{food.name}}  £{{food.price}}
+            {% if food.vegetarian %}
+                vegetarian
+            {% endif %}
+            <br />
+            {% if restaurant %}
+                {{restaurant.name}} <br />
+                <img src="{{MEDIA_URL}}{{restaurant.image}}" alt="restaurant logo" /> <br />
+                {{restaurant.address}} <br />
+            {% endif %}
+        {% else %}
+            No dinner for you.
+        {% endif %}
+
+    </div>
+    <div>
+        <a href="/whatsfordinner/index/">Index</a><br />
+    </div>
+</body>
+</html>
