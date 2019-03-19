@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-
+ {% extends 'whats_for_dinner/base.html' %} 
 {% load staticfiles %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
+{% block title_block %}
+	About
+{% endblock %}
+
+{% block body_block %}
+	<h1>About</h1>
     <div>
         <strong> This is the about page	</strong> <br />
     </div>
-    <div>
-        <a href="/whats_for_dinner/">Index</a><br />
-    </div>
-</body>
-</html>
+{% endblock %}

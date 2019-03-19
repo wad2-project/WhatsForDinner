@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>What's for Dinner</title>
-</head>
-<body>
+{% extends 'whats_for_dinner/base.html' %} 
+
+{% block title_block %}
+	Your Meal
+{% endblock %}
+
+{% block body_block %}
+	<h1>Your Meal</h1>
     <div>
-        <strong> Your Dinner </strong> <br />
+        <strong> Your Meal </strong> <br />
         {% if food %}
             {{food.name}}  £{{food.price}}
             {% if food.vegetarian %}
@@ -23,8 +25,4 @@
         {% endif %}
 
     </div>
-    <div>
-        <a href="/whats_for_dinner/">Index</a><br />
-    </div>
-</body>
-</html>
+{% endblock %}

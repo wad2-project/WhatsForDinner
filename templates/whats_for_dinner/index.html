@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-
+{% extends 'whats_for_dinner/base.html' %} 
 {% load staticfiles %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>What's for Dinner</title>
-</head>
-<body>
+{% block title_block %}
+		Home
+{% endblock %}
+
+{% block body_block %}
+	<h1>What's For Dinner?</h1>
     <div>
-        <strong> What's for Dinner? </strong> <br />
         <img src="{% static 'images/Whats-for-Dinner.jpg' %}" alt="Logo" />
     </div>
-    <div>
-        <a href="/whats_for_dinner/about/">About</a><br />
-    </div>
-</body>
-</html>
+{% endblock %}

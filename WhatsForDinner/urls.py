@@ -21,7 +21,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index'),
-    url(r'^whats_for_dinner/', include('whats_for_dinner.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+                  url(r'^admin/', admin.site.urls),
+                  url(r'^$', views.index, name='index'),
+                  url(r'^whats_for_dinner/', include('whats_for_dinner.urls')),
+                  url(r'^register/$', views.register, name="register"),
+                  url(r'^login/$', views.user_login, name="login"),
+                  url(r'^favourites/', views.favourites, name='favourites'),
+                  url(r'^logout/$', views.user_logout, name='logout'),
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
